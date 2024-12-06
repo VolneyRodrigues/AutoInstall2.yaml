@@ -8,7 +8,7 @@ autoinstall:
   packages:
     - ubuntu-desktop
 
-  # This adds the default snaps found on a 22.04 Ubuntu Desktop system.
+  # This adds the default snaps found on a 24.04 Ubuntu Desktop system.
   # Any desired additional snaps may also be listed here.
   snaps:
     - name: firefox
@@ -39,7 +39,7 @@ autoinstall:
 
   # Ubuntu Desktop uses the hwe flavor kernel by default.
   early-commands:
-    - echo 'linux-generic-hwe-22.04' > /run/kernel-meta-package
+    - echo 'linux-generic-hwe-24.04' > /run/kernel-meta-package
 
   # The live-server ISO does not contain some of the required packages,
   # such as ubuntu-desktop or the hwe kernel (or most of their depdendencies).
